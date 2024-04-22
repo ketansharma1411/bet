@@ -1,3 +1,6 @@
+body{
+color: black;
+}
 .App {
   text-align: center;
 }
@@ -5,6 +8,10 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 @media (prefers-reduced-motion: no-preference) {
