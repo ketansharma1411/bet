@@ -244,6 +244,9 @@ form .input-box span.details{
     max-width: 100%;
     text-align: center;
   }
+  .arrow a{
+    float: left;
+  }
   .maindiv{
         margin-left: 0;
         width: unset;

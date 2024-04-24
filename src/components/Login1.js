@@ -220,6 +220,9 @@ export default function Login1() {
     max-width: 100%;
     text-align: center;
   }
+  .arrow a{
+    float: left;
+  }
   .maindiv{
         margin-left: 0;
         width: unset;
