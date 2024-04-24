@@ -7,6 +7,9 @@ export default function Signup() {
     <Main>
     <div className='maindiv' style={{color:"white"}}>
       <div class="container">
+      <span className='arrow'>
+            <Link to='/'>Back</Link>
+            </span> 
         <div className='con1'>
     <div class="title">Registration</div>
     </div>
@@ -78,6 +81,11 @@ const Main=styled.div`
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
+.arrow a {
+    width: 50px;
+    height:50px;
+    color: white; 
+  }
 .button{
     
     background: #0078ff;

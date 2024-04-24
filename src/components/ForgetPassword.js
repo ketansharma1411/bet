@@ -7,6 +7,9 @@ export default function ForgetPassword() {
       <Main>
       <div className='maindiv' style={{color:"white"}}>
         <div class="container">
+        <div className='arrow'>
+            <Link to='/login'>Back</Link>
+            </div> 
       <div class="title">Forget Password</div>
       <div class="content">
         <form action="#">
@@ -40,6 +43,11 @@ export default function ForgetPassword() {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+  }
+  .arrow a {
+    width: 50px;
+    height:50px;
+    color: white; 
   }
   .button{
       

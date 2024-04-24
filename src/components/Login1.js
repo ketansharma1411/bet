@@ -7,6 +7,9 @@ export default function Login1() {
       <Main>
       <div className='maindiv' style={{color:"white"}}>
         <div class="container">
+        <div className='arrow'>
+            <Link to='/'>Back</Link>
+            </div> 
         <div className='con1'>
         <div class="title">Login</div>
       </div>
@@ -53,6 +56,11 @@ export default function Login1() {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+  }
+  .arrow a {
+    width: 50px;
+    height:50px;
+    color: white; 
   }
   .con1{
         display: flex;

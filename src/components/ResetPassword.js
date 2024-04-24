@@ -9,7 +9,9 @@ export default function ResetPassword() {
         <div class="container">
             
             
-            
+           <div className='arrow'>
+            <Link to='/login'>Back</Link>
+            </div> 
       <div className='con1'>
         <div class="title">Reset Password</div>
       </div>
@@ -68,7 +70,11 @@ export default function ResetPassword() {
       text-align: center;
       
   
-  
+  }
+  .arrow a {
+    width: 50px;
+    height:50px;
+    color: white; 
   }
   #btn{
       text-decoration: none;
