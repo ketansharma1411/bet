@@ -79,10 +79,16 @@ img{
 @media (max-width:830px){
     .maindiv{
         width: auto;
+        padding-right: 1rem;
     }
 }
 @media (max-width: 576px){
     width: unset;  
+}
+@media (min-width:900px) and (max-width:1200px) {
+  .maindiv{
+    width: auto;
+  }
 }
 
 /* animation */

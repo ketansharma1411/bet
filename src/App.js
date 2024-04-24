@@ -9,6 +9,7 @@ import Navbar_up from './components/Navbar_up';
 
 import Login1 from './components/Login1';
 import ForgetPassword from './components/ForgetPassword';
+import ResetPassword from './components/ResetPassword';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route exact path='/signup' element={<Signup/>}></Route>
       <Route exact path='/success' element={<Home/>}></Route>
       <Route exact path='/forgetpassword' element={<ForgetPassword/>}></Route>
+      <Route exact path='/resetpassword' element={<ResetPassword/>}></Route>
 
       
       </Routes>

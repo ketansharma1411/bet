@@ -24,7 +24,7 @@ export default function Navbar_up() {
                         <li><Link to='/ruby'>Ruby</Link></li>
                         <li><Link to='/f1'>F1</Link></li>
                         <li><Link to='/dhu'>DHU</Link></li>
-                        <li><Link to='/'>BigBash</Link></li>
+                        <li><Link to='/bigbash'>BigBash</Link></li>
                     </ul>
                     <Link to='/login' className='action_btn login_btn'>Login</Link>
                     <Link to='/signup' className='action_btn signup_btn'>Signup</Link>

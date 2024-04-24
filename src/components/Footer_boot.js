@@ -155,16 +155,16 @@ footer{
     footer{
         margin-top:4rem;
       border-radius:10px;
-      width:100%;
+      width:auto;
       margin-left:0px;
       margin-bottom:-30px;
       margin-right: 0;
-      
+      padding: 0;
 
     }
     .d-flex{
       border-radius: 0px;
-      width: unset;
+      width: auto;
     }
     
     

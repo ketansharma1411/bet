@@ -2,40 +2,37 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
 
-export default function Login1() {
+export default function ResetPassword() {
     return (
       <Main>
       <div className='maindiv' style={{color:"white"}}>
         <div class="container">
-        <div className='con1'>
-        <div class="title">Login</div>
+            
+            
+            
+      <div className='con1'>
+        <div class="title">Reset Password</div>
       </div>
       <div class="content">
-        <form action="#">
+        <form onSubmit="/">
           <div class="user-details">
             
             
             <div class="input-box">
-              <span class="details">Email</span>
-              <input type="text" placeholder="Enter your email" required/>
+              <span class="details">New Password</span>
+              <input type="text" placeholder="Enter new password" required/>
             </div>
             
             <div class="input-box">
-              <span class="details">Password</span>
-              <input type="text" placeholder="Enter your password" required/>
+              <span class="details">Confirm New Password</span>
+              <input type="text" placeholder="Confirm new password" required/>
             </div>
             
-            <div className='input-box'>
-                <span><Link to='/forgetpassword'>Forget Password?</Link></span>
-            </div>
-            <div className='input-box'>
-                <span><Link to='/resetpassword'>Reset Password?</Link></span>
-            </div>
           </div>
           
           
           <div class="button">
-            <Link id='btn' to='/'>Login</Link>
+            <Link id='btn' to='/'>Reset Password</Link>
           </div>
         </form>
       </div>
@@ -54,11 +51,7 @@ export default function Login1() {
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
   }
-  .con1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  
   .button{
       
       background: #0078ff;
@@ -110,6 +103,7 @@ export default function Login1() {
     font-size: 25px;
     font-weight: 500;
     position: relative;
+    display: flex;
     
   }
   .container .title::before{
@@ -118,7 +112,7 @@ export default function Login1() {
     left: 0;
     bottom: 0;
     height: 3px;
-    width: 60px;
+    width: 180px;
     border-radius: 5px;
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
   }
@@ -206,6 +200,11 @@ export default function Login1() {
     /* transform: scale(0.99); */
     background: linear-gradient(-135deg, #71b7e6, #9b59b6);
     }
+    .con1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     @media(max-width: 830px){
    .container{
@@ -234,7 +233,7 @@ export default function Login1() {
     }
     .container .title::before{
         left: auto;
-        width: 60px;
+        width: 184px;
     }
     }
 

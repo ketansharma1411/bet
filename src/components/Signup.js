@@ -7,7 +7,9 @@ export default function Signup() {
     <Main>
     <div className='maindiv' style={{color:"white"}}>
       <div class="container">
+        <div className='con1'>
     <div class="title">Registration</div>
+    </div>
     <div class="content">
       <form action="#">
         <div class="user-details">
@@ -135,7 +137,7 @@ body{
   left: 0;
   bottom: 0;
   height: 3px;
-  width: 30px;
+  width: 130px;
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
@@ -219,6 +221,11 @@ form .input-box span.details{
    transition: all 0.3s ease;
    background: linear-gradient(135deg, #71b7e6, #9b59b6);
  }
+ .con1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
  form .button input:hover{
   /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
@@ -232,6 +239,8 @@ form .input-box span.details{
   .maindiv{
         margin-left: 0;
         width: unset;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
   form .user-details .input-box{
       margin-bottom: 15px;

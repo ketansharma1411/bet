@@ -68,6 +68,8 @@ export default function Statistics() {
         width: 100%;
         margin-left: 0;
         margin-top: -80px;
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
     }
     .maindiv h2{
         margin-top: 16rem;
@@ -79,4 +81,10 @@ export default function Statistics() {
     }
     
  }
+ @media (min-width:900px) and (max-width:1200px) {
+  .maindiv{
+    width: auto;
+    
+  }
+}
  `

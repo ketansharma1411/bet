@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Carousel from './Carousel'
 import Statistics from './Statistics'
 
 export default function Home() {
+
+    
+    
+
   return (
     <>
+    <div >
     <Main>
         
         <div className='maindiv'>
@@ -25,8 +30,13 @@ export default function Home() {
         </div>
         
     </Main>
+    </div>
+    <div className='revel'>
     <Carousel/>
+    </div>
+    <div className='revel'>
     <Statistics/>
+    </div>
     </>
   )
 }
@@ -116,11 +126,27 @@ const Main=styled.div`
     font-weight: 300;
 }
 
+
+/* scroll effect */
+.revel{
+    position: relative;
+    transform: translateY((3350px));
+    display: none;
+    transition: 8s ;
+}
+/* .active{
+    transform: translateY((0px));
+    opacity: 1;
+
+} */
+
+
 /* Responsiveness */
 @media (max-width:830px){
     .maindiv{
         width: auto;
         
+        margin-right: 1rem;
     }
     .maindiv .content{
         font-weight: 700;
@@ -135,7 +161,21 @@ const Main=styled.div`
 
 
 
-
+@media (min-width:900px) and (max-width:1200px) {
+    .maindiv{
+        width: auto;
+    }
+    .maindiv .content .detail_more p{
+        width: auto;
+        font-size: auto;
+        line-break: auto;
+        /* margin-left: auto; */
+    }
+    .maindiv .content{
+        margin-left: auto;
+        padding-right: auto;
+    }
+}
 
 
 @media (min-width:100px) and (max-width: 850px){
@@ -172,48 +212,7 @@ const Main=styled.div`
         width: auto;
     }
 
-    /* .detail{
-    margin-left:auto ;
-    margin-top: -70px;
-    font-size: 20px;
-    }
-    .content{
-    width:50%;
-    margin-top: 7rem;
-    margin-left: -5rem;
-    }
-    .content button{
-    
-    width: unset;
-    height: 50px;
-    font-size: 27px;
-    
-    margin-left: -16rem;
-    margin-top: 1.5rem;
-    }
-    #span{
-    margin-left: -7rem;
-    }
-    .detail_more{
-        font-size: 15px;
-        text-align: left;
-        margin-left: 7.5rem;
-        margin-top: 1rem;
-    }
-    .picture img{
-    
-    width: 90%;
-    padding: 0.2rem;
-    height: 50%;
-    margin-left: 2rem;
-    margin-top: auto;
-    
-    }
-    .picture img{
-        width: 100%;
-        height: 100%;
-        border-radius: 0.7rem;
-    } */
+   
 
 
 }
