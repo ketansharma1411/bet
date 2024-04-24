@@ -223,6 +223,36 @@ form .input-box span.details{
   /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
   }
+
+  @media(max-width: 830px){
+   .container{
+    max-width: 100%;
+    text-align: center;
+  }
+  .maindiv{
+        margin-left: 0;
+        width: unset;
+    }
+  form .user-details .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    form .category{
+      width: 100%;
+    }
+    .content form .user-details{
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+      width: 5px;
+    }
+    .container .title::before{
+        left: auto;
+        width: 135px;
+    }
+    }
+
  @media(max-width: 584px){
  .container{
   max-width: 100%;

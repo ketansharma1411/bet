@@ -8,25 +8,25 @@ export default function Login_new() {
     <div className='mainring' style={{color:"white"}}>
       <div class="ring">
       <i style={{ "--clr": "#00ff0a" }}></i>
-  <i style={{ "--clr": "#ff0057" }}></i>
-  <i style={{ "--clr": "#fffd44" }}></i>
-  <div class="login">
-    <h2>Login</h2>
-    <div class="inputBx">
-      <input type="text" placeholder="Username"/>
+      <i style={{ "--clr": "#ff0057" }}></i>
+      <i style={{ "--clr": "#fffd44" }}></i>
+      <div class="login">
+        <h2>Login</h2>
+        <div class="inputBx">
+          <input type="text" placeholder="Username"/>
+        </div>
+        <div class="inputBx">
+          <input type="password" placeholder="Password"/>
+        </div>
+        <div class="inputBx">
+          <Link id='log' to='/success'>Login</Link>
+        </div>
+        <div class="links">
+          <a href="#">Forget Password</a>
+          <Link to="/signup">SignUp</Link>
+        </div>
+      </div>
     </div>
-    <div class="inputBx">
-      <input type="password" placeholder="Password"/>
-    </div>
-    <div class="inputBx">
-      <Link id='log' to='/success'>Login</Link>
-    </div>
-    <div class="links">
-      <a href="#">Forget Password</a>
-      <Link to="/signup">SignUp</Link>
-    </div>
-  </div>
-</div>
     </div>
     </Main>
   )
@@ -56,6 +56,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: red;
 }
 .ring i {
   position: absolute;
@@ -101,6 +102,10 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    background-color: green;
+    width:700px;
+    display: flex;
+    justify-content: center;
 }
 .login {
   position: absolute;
@@ -175,4 +180,26 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 830px) {
+  .ring {
+        flex-direction: column;
+        /* width: unset; */
+    }
+    .login {
+        width: 100%;
+        max-width: 300px;
+    }
+  
+}
+@media screen and (max-width: 270px) {
+  .ring {
+        flex-direction: row;
+        width: auto;
+    }
+    .login {
+        width: 100%;
+        max-width: 300px;
+    }
+  
+}
 `

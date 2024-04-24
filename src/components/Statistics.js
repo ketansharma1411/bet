@@ -53,7 +53,7 @@ export default function Statistics() {
     font-weight: bold;
     margin-top: 2rem;
     font-size: 40px;
-    font-family: "Jersey 10"; 
+    font-family: "bavro"; 
     font-weight: 400;
     font-style: normal;
  }

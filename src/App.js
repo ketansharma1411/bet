@@ -1,33 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Carousel from './components/Carousel';
-import Footer from './components/Footer';
 import Footer_boot from './components/Footer_boot';
-import Statistics from './components/Statistics';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Signup from './components/Signup';
-import Login_new from './components/Login_new';
+
+import Navbar_up from './components/Navbar_up';
+
+import Login1 from './components/Login1';
+import ForgetPassword from './components/ForgetPassword';
 
 function App() {
   return (
     <div className="App">
       
       <Router>
-      <Navbar/>
+      <Navbar_up/>
+      
       
       <Routes>
-      {/* <Route exact path='/' element={<Home/>}></Route> */}
+      
       <Route  path='/' element={<Home/>}></Route>
       
-      <Route exact path='/login' element={<Login_new/>}></Route>
+      <Route exact path='/login' element={<Login1/>}></Route>
       <Route exact path='/signup' element={<Signup/>}></Route>
       <Route exact path='/success' element={<Home/>}></Route>
+      <Route exact path='/forgetpassword' element={<ForgetPassword/>}></Route>
+
       
       </Routes>
-      {/* <Footer/> */}
+      
       <Footer_boot/>
 
       </Router>

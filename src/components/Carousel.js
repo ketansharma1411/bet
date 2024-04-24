@@ -15,21 +15,21 @@ export default function Carousel() {
   </div>
   <div class="carousel-inner" style={{borderRadius:"8px"}}>
     <div class="carousel-item active" style={{borderRadius:"8px"}}>
-      <img src="https://th.bing.com/th/id/OIP.F0cShnSHvHXNOKudAHiCMwHaGU?w=175&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="d-block w-100" alt="..."/>
+      <img src="https://m.media-amazon.com/images/I/91JL1XmxHQL._AC_SL1500_.jpg" class="d-block w-100" alt="..."/>
       <div class="carousel-caption d-none d-md-block" >
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
     <div class="carousel-item" style={{borderRadius:"8px"}}>
-      <img src="https://th.bing.com/th/id/OIP.ZZuNprXEs126K15CeR-tfwHaE7?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="d-block w-100" alt="..."/>
+      <img src="https://dekhnews.com/wp-content/uploads/2021/05/FIBA-ABL-1000x700-1.jpg" class="d-block w-100" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
     <div class="carousel-item" style={{borderRadius:"8px"}}>
-      <img src="https://th.bing.com/th/id/OIP.hqiIT0EbkD3WRRd4wEElRQAAAA?w=304&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="d-block w-100" alt="..."/>
+      <img src="https://i.pinimg.com/originals/53/50/3c/53503c28cd0d6bca81ae9a58a26dee69.jpg" class="d-block w-100" alt="..."/>
       <div class="carousel-caption d-none d-md-block" >
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>

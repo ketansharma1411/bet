@@ -155,7 +155,7 @@ footer{
     border-radius:10px;
     width:100%;
     margin-left:0px;
-    margin-bottom:-100px;
+    margin-bottom:170px;
     }
     
 }

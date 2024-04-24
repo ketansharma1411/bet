@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <>
     <Main>
+        {/* https://cric77.com/wp-content/uploads/2021/03/Cricket-Mobile-betting-app.jpg */}
         <div className='maindiv'>
             <div className='content'>
                 <p>Think You are lucky!</p>
@@ -14,7 +15,7 @@ export default function Home() {
                 <button>Play With Pro</button>
             </div>
             <div className='picture'>
-                <img src='https://cric77.com/wp-content/uploads/2021/03/Cricket-Mobile-betting-app.jpg' alt='sorry'></img>
+                <img src='https://th.bing.com/th/id/OIP.Tjn3F0m9zP9SrC1Lb7FutAAAAA?w=400&h=400&rs=1&pid=ImgDetMain' alt='sorry'></img>
             </div>
         </div>
         
@@ -54,6 +55,7 @@ const Main=styled.div`
     
     transition: 0.1s ease;
     font-family: "bavro";
+    font-family: '';
     font-weight: 400;
     font-style: normal;
 }
