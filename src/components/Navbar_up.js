@@ -17,14 +17,14 @@ export default function Navbar_up() {
         <Main>
             <header>
                 <div className='navbar'>
-                    <div className='logo'><a href='/'>LOGO</a></div>
+                    <div className='logo'><Link to='/'>LOGO</Link></div>
                     <ul className='links'>
-                        <li><a href='/'>BasketBall</a></li>
-                        <li><a href='/cricket'>Cricket</a></li>
-                        <li><a href='/ruby'>Ruby</a></li>
-                        <li><a href='/f1'>F1</a></li>
-                        <li><a href='/dhu'>DHU</a></li>
-                        <li><a href='/'>BigBash</a></li>
+                        <li ><Link to='/'>BasketBall</Link></li>
+                        <li className='active'><Link to='/cricket'>Cricket</Link></li>
+                        <li><Link to='/ruby'>Ruby</Link></li>
+                        <li><Link to='/f1'>F1</Link></li>
+                        <li><Link to='/dhu'>DHU</Link></li>
+                        <li><Link to='/'>BigBash</Link></li>
                     </ul>
                     <Link to='/login' className='action_btn login_btn'>Login</Link>
                     <Link to='/signup' className='action_btn signup_btn'>Signup</Link>
@@ -35,12 +35,12 @@ export default function Navbar_up() {
 
                 <div className={`dropdown_menu ${isOpen ? 'open' : ''}`}>
                     <ul>
-                        <li><a href='/'>BasketBall</a></li>
-                        <li><a href='/cricket'>Cricket</a></li>
-                        <li><a href='/ruby'>Ruby</a></li>
-                        <li><a href='/f1'>F1</a></li>
-                        <li><a href='/dhu'>DHU</a></li>
-                        <li><a href='/'>BigBash</a></li>
+                        <li><Link to='/'>BasketBall</Link></li>
+                        <li><Link to='/cricket'>Cricket</Link></li>
+                        <li><Link to='/ruby'>Ruby</Link></li>
+                        <li><Link to='/f1'>F1</Link></li>
+                        <li><Link to='/dhu'>DHU</Link></li>
+                        <li><Link to='/bigbash'>BigBash</Link></li>
                         <li><Link to='/login' className='action_btn' onClick={closeDropdown}>Login</Link></li>
                         <li><Link to='/signup' className='action_btn' onClick={closeDropdown}>Signup</Link></li>
                     </ul>
@@ -185,7 +185,7 @@ const Main = styled.div`
         }
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 530px) {
         .dropdown_menu {
             left: 2rem;
             width: unset;

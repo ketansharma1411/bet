@@ -16,24 +16,24 @@ export default function Carousel() {
   <div class="carousel-inner" style={{borderRadius:"8px"}}>
     <div class="carousel-item active" style={{borderRadius:"8px"}}>
       <img src="https://m.media-amazon.com/images/I/91JL1XmxHQL._AC_SL1500_.jpg" class="d-block w-100" alt="..."/>
-      <div class="carousel-caption d-none d-md-block" >
+      {/* <div class="carousel-caption d-none d-md-block" >
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
-      </div>
+      </div> */}
     </div>
     <div class="carousel-item" style={{borderRadius:"8px"}}>
       <img src="https://dekhnews.com/wp-content/uploads/2021/05/FIBA-ABL-1000x700-1.jpg" class="d-block w-100" alt="..."/>
-      <div class="carousel-caption d-none d-md-block">
+      {/* <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
-      </div>
+      </div> */}
     </div>
     <div class="carousel-item" style={{borderRadius:"8px"}}>
       <img src="https://i.pinimg.com/originals/53/50/3c/53503c28cd0d6bca81ae9a58a26dee69.jpg" class="d-block w-100" alt="..."/>
-      <div class="carousel-caption d-none d-md-block" >
+      {/* <div class="carousel-caption d-none d-md-block" >
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
-      </div>
+      </div> */}
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

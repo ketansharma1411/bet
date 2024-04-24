@@ -7,11 +7,16 @@ export default function Home() {
   return (
     <>
     <Main>
-        {/* https://cric77.com/wp-content/uploads/2021/03/Cricket-Mobile-betting-app.jpg */}
+        
         <div className='maindiv'>
             <div className='content'>
-                <p>Think You are lucky!</p>
-                <p>Let's Try it <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                <div className='detail'>
+                <p id='title'>Think You are lucky!</p>
+                <p id='span'>Let's Try it <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                </div>
+                <div className='detail_more'>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, iure dolorem. Perspiciatis aspernatur optio suscipit unde! Ea perferendis excepturi magnam, dolore eveniet architecto odio delectus omnis nisi eos repellendus rem.
+                </div>
                 <button>Play With Pro</button>
             </div>
             <div className='picture'>
@@ -32,14 +37,19 @@ const Main=styled.div`
     width: 950px;
     height: 500px;
     background-color: rgb(255 255 255 / 6%);
-    
     border: none;
     border-radius: 10px;
     margin-left: 1rem;
     padding: 1rem;
     margin-top: 0.2rem;
     display: flex;
+    flex-direction: row;
     gap: 0.2rem;
+}
+.detail{
+    margin-left:-85px ;
+    margin-top: -150px;
+    font-size: 45px;
 }
 .content{
     width:50%;
@@ -52,12 +62,12 @@ const Main=styled.div`
     border: none;
     outline: none;  
     color: white;
-    
     transition: 0.1s ease;
     font-family: "bavro";
-    font-family: '';
     font-weight: 400;
     font-style: normal;
+
+    margin-top: 7rem;
 }
 .content button{
     border: none;
@@ -73,6 +83,8 @@ const Main=styled.div`
     padding: 0px 10px;
     font-family: "Jersey 10";
     
+    margin-left: -21rem;
+    margin-top: 2rem;
 }
 .content button:hover{
     scale: 1.05;
@@ -90,10 +102,25 @@ const Main=styled.div`
     border-radius: 0.7rem;
 }
 
+.content p{
+    line-height: 25px;
+}
+#span{
+    margin-left: -120px;
+}
+.detail_more{
+    font-size: 15px;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
 /* Responsiveness */
 @media (max-width:830px){
     .maindiv{
         width: auto;
+        
     }
     .maindiv .content{
         font-weight: 700;
@@ -102,12 +129,93 @@ const Main=styled.div`
     .maindiv .content button{
         font-size: 15px;
         height: 40px;
-
-
     }
+    
 }
-@media (max-width: 576px){
-    width: auto;  
+
+
+
+
+
+
+@media (min-width:100px) and (max-width: 850px){
+    .maindiv{
+        width: auto;
+        flex-direction: column;
+        height: auto;
+        gap: 1em;
+    }  
+    .maindiv .content{
+        font-weight: 700;
+        font-size: 25px;
+        width: auto;
+        margin-top: 4rem;
+        padding-left: 0;
+        position: relative;
+    }
+    .maindiv .content button{
+        display: none;
+        font-size: 15px;
+        height: 40px;
+        /* margin-left:auto; */
+        align-items: center;
+    }
+    .maindiv .content .detail{
+        font-size: 25px;
+        margin-left: 0;
+        margin-top: -3rem;
+    }
+    #span{
+        margin-left: 0;
+    }
+    .maindiv .picture{
+        width: auto;
+    }
+
+    /* .detail{
+    margin-left:auto ;
+    margin-top: -70px;
+    font-size: 20px;
+    }
+    .content{
+    width:50%;
+    margin-top: 7rem;
+    margin-left: -5rem;
+    }
+    .content button{
+    
+    width: unset;
+    height: 50px;
+    font-size: 27px;
+    
+    margin-left: -16rem;
+    margin-top: 1.5rem;
+    }
+    #span{
+    margin-left: -7rem;
+    }
+    .detail_more{
+        font-size: 15px;
+        text-align: left;
+        margin-left: 7.5rem;
+        margin-top: 1rem;
+    }
+    .picture img{
+    
+    width: 90%;
+    padding: 0.2rem;
+    height: 50%;
+    margin-left: 2rem;
+    margin-top: auto;
+    
+    }
+    .picture img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0.7rem;
+    } */
+
+
 }
 
 /* animation */

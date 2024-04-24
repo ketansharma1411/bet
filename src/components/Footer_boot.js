@@ -15,7 +15,7 @@ export default function Footer_boot() {
     
     <section
              class="d-flex justify-content-between p-4"
-             style={{backgroundColor: "#007FFF",borderRadius:"10px"}}
+             style={{backgroundColor: "#007FFF",borderRadius:"10px 10px 0px 0px"}}
              >
       
       <div class="me-5">
@@ -147,16 +147,26 @@ footer{
     width:980px;
     margin-left:-20px;
     margin-bottom:-100px;
+    
 }
+
 
 @media (max-width: 830px) {
     footer{
         margin-top:4rem;
-    border-radius:10px;
-    width:100%;
-    margin-left:0px;
-    margin-bottom:170px;
+      border-radius:10px;
+      width:100%;
+      margin-left:0px;
+      margin-bottom:-30px;
+      margin-right: 0;
+      
+
     }
+    .d-flex{
+      border-radius: 0px;
+      width: unset;
+    }
+    
     
 }
 
